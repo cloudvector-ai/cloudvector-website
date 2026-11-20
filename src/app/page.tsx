@@ -15,13 +15,13 @@ export default function HomePage() {
     <main>
       <section className="relative overflow-hidden bg-slate-950">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(47,128,237,.28),transparent_28%),radial-gradient(circle_at_10%_80%,rgba(39,197,246,.12),transparent_22%)]" />
-        <div className="relative mx-auto grid min-h-[650px] max-w-7xl items-center gap-12 px-6 py-16 lg:grid-cols-[1.05fr_.95fr] lg:px-8">
+        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 sm:py-20 lg:min-h-[680px] lg:grid-cols-[minmax(0,1.05fr)_minmax(0,.95fr)] lg:gap-16 lg:px-8 lg:py-24">
           <div className="max-w-2xl">
             <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.07] px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-sky-300">
               <span className="h-1.5 w-1.5 rounded-full bg-sky-300 shadow-[0_0_12px_#7dd3fc]" />
               AI-powered modernization
             </div>
-            <h1 className="text-5xl font-extrabold leading-[1.03] tracking-tight text-white md:text-6xl xl:text-[68px]">
+            <h1 className="text-4xl font-extrabold leading-[1.06] tracking-tight text-white sm:text-5xl md:text-6xl xl:text-[68px]">
               Move Oracle forward.
               <span className="mt-2 block text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-blue-400">Move your business faster.</span>
             </h1>
@@ -45,24 +45,24 @@ export default function HomePage() {
 
           <div className="relative">
             <div className="absolute -inset-8 rounded-full bg-blue-500/10 blur-3xl" />
-            <div className="relative ml-auto max-w-[560px]">
+            <div className="relative mx-auto w-full max-w-[560px] lg:ml-auto">
               <div className="overflow-hidden rounded-[28px] border border-white/10 bg-slate-900 p-2 shadow-2xl shadow-black/30">
                 <img
                   src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=85"
                   alt="Modern cloud data center"
-                  className="h-[420px] w-full rounded-[21px] object-cover"
+                  className="h-[280px] w-full rounded-[21px] object-cover sm:h-[360px] lg:h-[420px]"
                 />
               </div>
-              <div className="absolute -bottom-6 left-4 right-8 grid grid-cols-3 gap-2 rounded-2xl border border-slate-200 bg-white p-3 shadow-2xl md:left-[-36px] md:right-12">
+              <div className="absolute -bottom-8 left-3 right-3 grid grid-cols-3 gap-1.5 rounded-2xl border border-slate-200 bg-white p-2 shadow-2xl sm:left-[-24px] sm:right-6 sm:gap-2 sm:p-3 lg:left-[-36px]">
                 {[
                   ["Discovery", "Complete", <Database key="db" size={18} />],
                   ["Risk score", "Low", <ShieldCheck key="risk" size={18} />],
                   ["Migration plan", "Ready", <CloudCog key="cloud" size={18} />],
                 ].map(([label, value, icon]) => (
-                  <div key={String(label)} className="rounded-xl bg-slate-50 px-3 py-3 text-slate-950">
-                    <div className="mb-2 text-primary">{icon}</div>
-                    <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400">{label}</div>
-                    <div className="mt-1 text-sm font-bold">{value}</div>
+                  <div key={String(label)} className="min-w-0 rounded-xl bg-slate-50 px-2 py-2.5 text-slate-950 sm:px-3 sm:py-3">
+                    <div className="mb-1.5 text-primary sm:mb-2">{icon}</div>
+                    <div className="truncate text-[9px] font-bold uppercase tracking-wide text-slate-400 sm:text-[10px] sm:tracking-wider">{label}</div>
+                    <div className="mt-1 truncate text-xs font-bold sm:text-sm">{value}</div>
                   </div>
                 ))}
               </div>
@@ -83,7 +83,7 @@ export default function HomePage() {
               { icon: <TimerReset />, title: "Business risk", text: "Plan around uptime requirements, data integrity, rollback windows, and operational constraints.", image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80" },
               { icon: <BarChart3 />, title: "Uncertain economics", text: "Model OCI and AWS options with transparent sizing, total cost, and licensing implications.", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" },
             ].map((item) => (
-              <article key={item.title} className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+              <article key={item.title} className="group h-full overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
                 <div className="h-44 overflow-hidden">
                   <img src={item.image} alt="" className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
                 </div>
@@ -118,7 +118,7 @@ export default function HomePage() {
               ["05", "AI migration agents", "Automate analysis and repeatable work to accelerate delivery and reduce manual effort."],
               ["06", "Assessment reporting", "Give technology and executive teams clear findings, forecasts, and next actions."],
             ].map(([number, title, text]) => (
-              <article key={title} className="feature-card">
+              <article key={title} className="feature-card h-full">
                 <span className="text-xs font-extrabold tracking-[0.18em] text-secondary">{number}</span>
                 <h3 className="mt-5 text-xl font-bold text-slate-950">{title}</h3>
                 <p className="mt-3 leading-7 text-slate-600">{text}</p>

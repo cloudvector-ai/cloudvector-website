@@ -29,6 +29,6 @@
   }
   .section-heading { @apply text-3xl font-extrabold tracking-tight text-slate-950 md:text-4xl; }
   .feature-card {
-    @apply rounded-2xl border border-slate-200/80 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-950/[0.06];
+    @apply h-full rounded-2xl border border-slate-200/80 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-950/[0.06];
   }
 }

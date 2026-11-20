@@ -4,7 +4,6 @@ import {
   TrendingUp,
   Puzzle,
   Cloud,
-  Amazon,
   Search,
   Map,
   Boxes,
@@ -146,7 +145,7 @@ export default function HomePage() {
                 desc: "Seamlessly migrate from Oracle to Oracle Cloud Infrastructure with AI-powered automation.",
               },
               {
-                icon: <Amazon className="text-secondary" size={24} />,
+                icon: <Cloud className="text-secondary" size={24} />,
                 title: "Oracle to AWS",
                 desc: "Lift and modernize Oracle databases to AWS with speed, security, and cost optimization.",
               },

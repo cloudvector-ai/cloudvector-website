@@ -12,14 +12,8 @@ export default function HomePage() {
   return (
     <main>
       <section className="relative isolate flex min-h-[80svh] items-center justify-center overflow-hidden bg-slate-950 text-center sm:min-h-[85svh] lg:min-h-[90svh]">
-        <img
-          src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=2400&q=90"
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 -z-20 h-full w-full object-cover object-center"
-        />
-        <div className="absolute inset-0 -z-10 bg-slate-950/45" />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-slate-950/35 via-transparent to-slate-950/65" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950" />
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_50%_0%,rgba(47,128,237,0.22),transparent_55%)]" />
         <div className="mx-auto max-w-4xl px-6 py-28 sm:py-36">
           <div className="mb-8 inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.3em] text-white/75">
             <span className="h-px w-8 bg-white/50" />

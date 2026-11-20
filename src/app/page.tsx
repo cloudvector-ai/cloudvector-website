@@ -4,69 +4,48 @@ import {
   BarChart3,
   Bot,
   CheckCircle2,
-  CloudCog,
   Database,
-  ShieldCheck,
   TimerReset,
 } from "lucide-react";
 
 export default function HomePage() {
   return (
     <main>
-      <section className="relative overflow-hidden bg-slate-950">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(47,128,237,.28),transparent_28%),radial-gradient(circle_at_10%_80%,rgba(39,197,246,.12),transparent_22%)]" />
-        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 sm:py-20 lg:min-h-[680px] lg:grid-cols-[minmax(0,1.05fr)_minmax(0,.95fr)] lg:gap-16 lg:px-8 lg:py-24">
-          <div className="max-w-2xl">
-            <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.07] px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-sky-300">
-              <span className="h-1.5 w-1.5 rounded-full bg-sky-300 shadow-[0_0_12px_#7dd3fc]" />
-              AI-powered modernization
-            </div>
-            <h1 className="text-4xl font-extrabold leading-[1.06] tracking-tight text-white sm:text-5xl md:text-6xl xl:text-[68px]">
-              Move Oracle forward.
-              <span className="mt-2 block text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-blue-400">Move your business faster.</span>
-            </h1>
-            <p className="mt-7 max-w-xl text-lg leading-8 text-slate-300">
-              Accelerate OCI and AWS migrations with AI-driven discovery, precise planning, and autonomous execution—built for the complexity of enterprise databases.
-            </p>
-            <div className="mt-9 flex flex-wrap gap-4">
-              <Link href="/contact#assessment" className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-4 text-sm font-bold text-slate-950 shadow-xl transition hover:-translate-y-1">
-                Book a free assessment <ArrowRight size={17} />
-              </Link>
-              <Link href="/products" className="inline-flex items-center rounded-xl border border-white/20 px-6 py-4 text-sm font-bold text-white transition hover:bg-white/10">
-                Explore VectorMigrate
-              </Link>
-            </div>
-            <div className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-sm font-medium text-slate-400">
-              <span className="flex items-center gap-2"><CheckCircle2 size={16} className="text-sky-400" /> Oracle specialists</span>
-              <span className="flex items-center gap-2"><CheckCircle2 size={16} className="text-sky-400" /> OCI and AWS</span>
-              <span className="flex items-center gap-2"><CheckCircle2 size={16} className="text-sky-400" /> Risk-led delivery</span>
-            </div>
+      <section className="relative isolate flex min-h-[80svh] items-center justify-center overflow-hidden bg-slate-950 text-center sm:min-h-[85svh] lg:min-h-[90svh]">
+        <img
+          src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=2400&q=90"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 -z-20 h-full w-full object-cover object-center"
+        />
+        <div className="absolute inset-0 -z-10 bg-slate-950/45" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-slate-950/35 via-transparent to-slate-950/65" />
+        <div className="mx-auto max-w-4xl px-6 py-28 sm:py-36">
+          <div className="mb-8 inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.3em] text-white/75">
+            <span className="h-px w-8 bg-white/50" />
+            CloudVector AI
+            <span className="h-px w-8 bg-white/50" />
           </div>
-
-          <div className="relative">
-            <div className="absolute -inset-8 rounded-full bg-blue-500/10 blur-3xl" />
-            <div className="relative mx-auto w-full max-w-[560px] lg:ml-auto">
-              <div className="overflow-hidden rounded-[28px] border border-white/10 bg-slate-900 p-2 shadow-2xl shadow-black/30">
-                <img
-                  src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=85"
-                  alt="Modern cloud data center"
-                  className="h-[280px] w-full rounded-[21px] object-cover sm:h-[360px] lg:h-[420px]"
-                />
-              </div>
-              <div className="absolute -bottom-8 left-3 right-3 grid grid-cols-3 gap-1.5 rounded-2xl border border-slate-200 bg-white p-2 shadow-2xl sm:left-[-24px] sm:right-6 sm:gap-2 sm:p-3 lg:left-[-36px]">
-                {[
-                  ["Discovery", "Complete", <Database key="db" size={18} />],
-                  ["Risk score", "Low", <ShieldCheck key="risk" size={18} />],
-                  ["Migration plan", "Ready", <CloudCog key="cloud" size={18} />],
-                ].map(([label, value, icon]) => (
-                  <div key={String(label)} className="min-w-0 rounded-xl bg-slate-50 px-2 py-2.5 text-slate-950 sm:px-3 sm:py-3">
-                    <div className="mb-1.5 text-primary sm:mb-2">{icon}</div>
-                    <div className="truncate text-[9px] font-bold uppercase tracking-wide text-slate-400 sm:text-[10px] sm:tracking-wider">{label}</div>
-                    <div className="mt-1 truncate text-xs font-bold sm:text-sm">{value}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
+          <h1 className="text-5xl font-light leading-[1.1] tracking-[-0.045em] text-white sm:text-6xl md:text-7xl lg:text-[88px]">
+            A clearer path
+            <span className="mt-2 block">to the cloud.</span>
+          </h1>
+          <p className="mx-auto mt-7 max-w-2xl text-base font-light leading-7 text-white/80 sm:text-lg sm:leading-8">
+            Thoughtful, AI-powered Oracle modernization for the next chapter of your business.
+            Plan your move to OCI or AWS with clarity and confidence.
+          </p>
+          <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <Link href="/contact#assessment" className="inline-flex min-w-52 items-center justify-center gap-2 border border-white bg-white px-6 py-3.5 text-sm font-semibold text-slate-950 transition hover:border-white/80 hover:bg-white/90">
+              Book an assessment <ArrowRight size={16} />
+            </Link>
+            <Link href="/services" className="inline-flex min-w-52 items-center justify-center border border-white/50 bg-black/10 px-6 py-3.5 text-sm font-medium text-white backdrop-blur-sm transition hover:border-white hover:bg-white/10">
+              Explore our approach
+            </Link>
+          </div>
+          <div className="mt-12 flex flex-wrap justify-center gap-x-7 gap-y-3 text-xs font-medium tracking-wide text-white/70">
+            <span className="flex items-center gap-2"><CheckCircle2 size={14} /> Oracle specialists</span>
+            <span className="flex items-center gap-2"><CheckCircle2 size={14} /> OCI and AWS</span>
+            <span className="flex items-center gap-2"><CheckCircle2 size={14} /> Risk-led delivery</span>
           </div>
         </div>
       </section>

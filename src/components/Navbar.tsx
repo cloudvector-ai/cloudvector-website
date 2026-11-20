@@ -9,6 +9,9 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/60 bg-white/95 backdrop-blur-xl">
+      <div className="bg-slate-950 px-4 py-2 text-center text-[10px] font-medium uppercase tracking-[0.18em] text-white/85">
+        AI-powered Oracle modernization <span className="mx-2 text-white/40">·</span> OCI &amp; AWS
+      </div>
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
           <span className="grid h-9 w-9 place-items-center rounded-full border border-slate-300 text-xs font-semibold tracking-tight text-primary">CV</span>
@@ -24,12 +27,6 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <Link
-            href="/contact"
-            className="px-3 py-2.5 text-[13px] font-medium text-slate-600 transition hover:text-primary"
-          >
-            Request Demo
-          </Link>
           <Link
             href="/contact#assessment"
             className="border border-slate-900 bg-slate-900 px-5 py-3 text-[13px] font-medium text-white transition hover:border-primary hover:bg-primary"

@@ -12,6 +12,7 @@ import {
   Clock,
   Star,
   ArrowRight,
+  Search,
 } from "lucide-react";
 
 export default function HomePage() {

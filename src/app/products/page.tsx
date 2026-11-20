@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Bot, BarChart3, FileText, Shield, Zap, Target } from "lucide-react";
+import { ArrowRight, Bot, BarChart3, FileText, Search, Shield, Zap, Target } from "lucide-react";
 
 export default function ProductsPage() {
   return (
@@ -83,8 +83,4 @@ export default function ProductsPage() {
       </section>
     </div>
   );
-}
-
-function Search(props: any) {
-  return <svg {...props} /* simple search icon fallback if needed */ />;
 }
